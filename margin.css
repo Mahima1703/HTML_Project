@@ -1,0 +1,28 @@
+div{
+
+    border: 3px solid red;
+  
+    /*margin: 10px 20px 300px 100px;
+
+    padding: 10px 20px 30px 40px;*/
+
+    width:100px;
+
+    height: 200px;
+
+    overflow: scroll; 
+
+   position: sticky;
+
+    bottom:10px;
+
+    left:0px;
+
+    right:20px;
+}
+
+li{
+    list-style-type:armenian;
+    list-style-position: outside;
+    /*list-style-image: url(mygif.gif);*/
+}

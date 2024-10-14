@@ -1,0 +1,35 @@
+/*.myclass{
+
+    color:blue;
+}
+
+#mypara{
+
+    color:azure;
+    
+}
+
+*{
+    color:brown;
+}
+
+a[href="https://getintech.in/courses/"]{
+
+    color:blueviolet;
+}
+input[type="password"]{
+    color:chartreuse;
+}
+li:nth-of-type(even){
+    color:darkblue;
+
+}*/
+
+li a{
+
+    color:darkgoldenrod;
+}
+
+ol+a{
+    color:deeppink;
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function greetings1(name,age){
+            document.write("Hello...Hi");
+            document.write(name);
+            document.write(age);
+        }
+
+      //  greetings("Getin")
+        n = "Tech"
+        a = 18
+       // greetings(n,a)
+
+        function addTwoNum(a,b){
+
+            c = a+b
+            //document.write(c);
+            return c;
+        }
+
+     //   result = addTwoNum(2,3)
+      //  document.write(result)
+      let greetings = function myfun(){
+
+            document.write("Welcome");
+}
+
+greetings()
+
+
+let afun = function(n1,n2){
+
+    document.write(n1+n2);
+}
+
+afun(2,3)
+
+// Arrow Function
+g = (a,b) => { document.write("Getin Technology ")
+
+    document.write(a+b)
+}
+g(4,5)
+
+
+function addnNum(...a){
+    sum =0
+    for(let i of a){
+        sum = sum +i
+    }
+    return sum
+}
+
+res = addnNum(2,3,4,7,10)
+document.write(res)
+
+     
+    </script>
+</head>
+
+<body>
+    
+</body>
+</html>

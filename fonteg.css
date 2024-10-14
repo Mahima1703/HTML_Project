@@ -1,0 +1,54 @@
+/*p{
+    /*font-family: Geneva, Tahoma, sans-serif;
+    font-style: italic;
+    font-weight:600;
+    font-size:10vw;
+    font-variant:small-caps;
+    font: normal small-caps bold 400px Georgia, serif;
+}*/
+
+/* Way 1 Example */
+p{
+    font-family: Nerko One;
+    /*text-decoration: overline underline;
+    text-decoration-style: wavy;*/
+    /*direction: rtl;*/
+    /*text-shadow: 2px 2px 6px blue, 3px 4px 4px red ,3px 4px 4px yellow;*/
+    
+}
+
+/* Way 2: By using @font-face rule*/
+
+/* step1: give any name to your font and add the font-face rule to your font*/
+a{
+    font-family: myfont;
+}
+
+span{
+    vertical-align: baseline;
+}
+
+@font-face {
+    font-family: myfont;
+    src: url('Matemasie-Regular.ttf');
+}
+a:link{
+    color:brown;
+}
+
+
+a:hover{
+
+    color:chartreuse;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+a:active{
+    color:red;
+}
+
+a:visited{
+
+    color:aquamarine;
+    cursor:grab;
+}

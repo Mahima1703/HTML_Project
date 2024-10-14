@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Getin</title>
+
+    
+</head>
+<body>
+    <h2 id="heading">Java Script<i>GEtin</i></h2>
+    <p class="mypara">DOM</p>
+    <h3 class="mypara"></h3>
+    <div id="mypara">
+        <h4></h4>
+        <p id="myid"></p>
+    </div>
+    <h1 id="head1"></h1>
+    <script>
+
+       const idvalue= document.getElementById("myid")
+       document.write(idvalue);
+
+       const classvalue= document.getElementsByClassName("mypara")
+       document.write(classvalue)
+
+       const tagvalue= document.getElementsByTagName("p")
+       document.write(tagvalue[0])
+
+       const queryvalue=document.querySelectorAll("div p")
+       document.write(queryvalue)
+
+      let headtext = document.getElementById("heading").innerHTML;
+      document.write(headtext) 
+
+      let headtext1 = document.getElementById("heading").innerText;
+      document.write(headtext1) 
+
+      let headtext2 = document.getElementById("heading").textContent;
+      document.write(headtext2) 
+      document.getElementById("myid").innerHTML = " My paragraph ELement";
+       
+      let fchild = document.getElementById("mypara").firstElementChild.innerHTML="h4 inside div";
+      document.write(fchild);
+
+     document.write(document.getElementById("head1").hasChildNodes());
+
+     let e = document.createElement("p");
+
+     let t = document.createTextNode(" DOM JS");
+
+     e.appendChild(t);
+     
+     document.body.appendChild(e);
+
+
+     let schild = document.getElementById("mypara").nextSibling.innerHTML="Sibling";
+      document.write(schild);
+
+      document.write(e.nodeName);
+
+      document.write(e.nodeType);
+
+      document.write(t.nodeValue);
+
+      document.write(t.parentNode);
+
+      document.write(e.previousSibling);
+
+      document.write(e.hasAttributes());
+       let hi= document.createElement("h2");
+        hi.textContent =" Insert Before"
+     let p = document.getElementById("mypara");
+     let pid = document.getElementById("myid")
+     p.insertBefore(hi,pid);
+
+     
+    </script>
+</body>
+</html>

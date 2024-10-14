@@ -1,0 +1,23 @@
+div{
+    width:200px;
+    height:100px;
+    background-color: blue;
+    transition: width 3s ease-out ;
+   /* transform: skew(40deg);*/
+    
+}
+
+div:hover{
+
+   /* width: 300px;
+   transform: translate(50px,200px); 
+   transform: rotateY(140deg); 
+   transform: scale(1.5);*/
+  /* transform: skew(40deg);
+
+  transform: rotate(90deg);
+
+  transform: skewY(150deg);*/
+
+  transform: translate(100px,150px);
+}

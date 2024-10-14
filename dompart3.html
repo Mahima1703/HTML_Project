@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="mydiv">
+
+        <p id="f1">First Para</p>
+
+        <p id="s1">Second Para</p>
+
+        <p id="t3">Third Para</p>
+
+    </div>
+
+    <form id="regform" action="entity.html" onsubmit="validateForm()">
+
+           Username: <input type="text" name="uname">
+
+           <br/><br/>
+
+           Password: <input type="text" name="pwd"/>
+
+           <br/> <br/>
+
+           <input type="submit"/>
+
+    </form>
+
+    <script>
+
+            function validateForm(){
+                let f = document.getElementById("regform");
+
+                let n = f.elements["uname"];
+
+                if (n.value =="getin"){
+
+                alert("Hi")
+                }
+            console.log(n.value);
+
+            }
+        
+      /* let d= document.getElementById("mydiv");
+
+      let h= document.createElement("h2");
+      let hed2 =  document.createTextNode("Heading 2");
+
+      h.appendChild(hed2);
+      h.setAttribute('id','myh2');
+
+      document.body.appendChild(h);
+
+
+      // to remove second para 
+
+
+      let s = document.getElementById("s1");
+      d.removeChild(s);
+
+      let he3 = document.createElement("h3");
+      let th3 = document.createTextNode("Heading 3");
+
+      he3.appendChild(th3);
+
+      let p3 = document.getElementById("t3");
+
+      d.replaceChild(he3,p3);
+
+      //d.appendChild(h);
+
+     // let p2 = document.getElementById("s1");
+
+      //d.insertBefore(h,p2);
+
+  // let p3=document.getElementById("t3");
+ //  d.insertBefore(h,p3); */
+    </script>
+</body>
+</html>

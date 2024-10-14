@@ -1,0 +1,30 @@
+/*div {
+    width: 3px;
+    height: 30px;
+    border: 15px solid rgb(128, 83, 0);
+    padding-left: 10px;
+    margin: 20px;
+  }
+
+  div{
+
+    width: 200px;
+    height: 200px;
+    overflow:scroll;
+    border: 15px solid rgb(128, 83, 0);
+  }*/
+
+  div {
+    position: sticky;
+    bottom: 0;
+    left: 0;
+    width: 300px;
+    border: 3px solid #73AD21;
+  }
+
+  li{
+    list-style-position: outside;
+    list-style-type:disc;
+    list-style: circle;
+    list-style-image:url('mygif.gif');
+  }

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <h2>JS</h2>
+</head>
+<body>
+    <div id="mydiv">
+        <p id="dp">Paragraph Inside DIV</p>
+        <h2 id="dh">h2 inside DIV</h2>
+       
+    </div>
+    <p id="op">Paragraph outside DIV</p>
+
+  
+
+    <script>
+       let h=  document.getElementById("mydiv");
+       document.write(h);
+
+       let hf = document.getElementById("mydiv").firstChild;
+       document.write(hf);
+
+       let lf = document.getElementById("mydiv").lastElementChild;
+       document.write(lf);
+
+       let sib = document.getElementById("mydiv").nextElementSibling;
+       document.write(sib);
+
+
+       let element = document.createElement("p");
+       let text = document.createTextNode(" Content inside P Tag ");
+       element.appendChild(text);
+
+        h.appendChild(element);
+       
+        let elements = document.createElement("h2");
+        let text1 = document.createTextNode("Heading By H2");
+        elements.appendChild(text1);
+
+        document.getElementById("op").appendChild(elements);
+    
+        let element1 = document.createElement("h3")
+        let text2 = document.createTextNode("Heading h3")
+        element1.appendChild(text2)
+
+        document.getElementById("op").appendChild(element1);
+
+        document.write(element1.nodeName)
+
+        document.write(element1.nodeType)
+
+        document.write(text2.nodeValue)
+
+        document.write(text2.parentNode)
+
+        document.write(element1.previousElementSibling)
+    </script>
+</body>
+</html>

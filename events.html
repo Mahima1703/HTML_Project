@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type ="button" value = "click Me" onclick="myfun()"/>
+
+    <!--<p onmouseover="myfun()">Paragraph</p>-->
+
+    <p id="mypara">Event Listener</p>
+
+    <script>
+        function myfun(){
+
+            document.write("Hi Hello");
+        }
+        //document.getElementById("mypara").addEventListener("mouseover", function() {
+
+         //   document.write("Paragraph Element");
+       // });
+
+        document.getElementById("mypara").addEventListener("click",function(){
+            document.write("Click Event");
+        });
+
+        document.getElementById("mypara").addEventListener("contextmenu",function(){
+            document.write("Context Event");
+        })
+    </script>
+</body>
+</html>

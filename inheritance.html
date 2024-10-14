@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Inheritance - Demo</h2>
+    <script>
+        
+/*class person
+{
+
+	constructor(name,age,gender){
+        this._name = name;
+        this.age = age;
+        this.gender = gender;
+    }
+
+    getPersonDetails(){
+
+       // document.write("Inside Person Class");
+        document.write(this.name);
+        document.write(this.age);
+        document.write(this.gender);
+
+    }
+
+}*/
+
+/*p = new person("Ram",23,"Male");
+p.getPersonDetails();*/
+
+/*class student extends person{
+
+        constructor(name,age,gender,id,stuclass){
+            super(name,age,gender)
+            this.id= id;
+            this.stuclass = stuclass;
+
+        }
+
+        getstudentDetails(){
+
+          //  document.write("Inside Student Class");
+            document.write(this.id);
+            document.write(this.stuclass);
+            document.write(this.name);
+            document.write(this.age);
+        }
+
+        getPersonDetails(){
+
+            super.getPersonDetails()
+
+            //document.write("Inside Student Class - Person Details");
+}
+
+}
+
+stu = new student("Ram",23,"Male",1,"JS");
+stu.getstudentDetails();
+stu.getPersonDetails();
+
+
+document.write("Inheritance");*/
+
+class person{
+
+    display(name,age){
+
+        document.write(name);
+        document.write(age);
+    }
+
+    display(name,age,location){
+        document.write("Inside 3 parameter");
+        if(name==undefined){
+            document.write(age);
+        document.write(location);
+        }
+        else if (name==undefined && age==undefined){
+            
+        document.write(location);
+        }
+        else{
+            document.write(name);
+            document.write(age);
+            document.write(location);
+        }
+        
+        
+    }
+}
+
+p = new person()
+p.display("ram",24,"KVP");
+    </script>
+</body>
+</html>

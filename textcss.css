@@ -1,0 +1,37 @@
+p{
+   color: black; 
+  /* background-color: black;*/
+   
+   text-align-last: right;
+   direction: rtl;
+  /* text-decoration-line: overline underline;
+   text-decoration-color: chartreuse;
+   text-decoration-style:wavy;
+   text-decoration-thickness: auto;
+   text-transform: capitalize;*/
+   text-indent: 5px;
+  /* letter-spacing: 3px;
+   word-spacing: 15px;
+   line-height: 15px;*/
+   /*white-space: nowrap;*/
+   text-shadow: 8px 5px 5px blue
+}
+
+.mydiv a{
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    width: 50%;
+   /* background: linear-gradient(to bottom, green, yellow,red);*/
+   background-image: radial-gradient( red, yellow , green);
+
+
+  
+    
+}
+nav{
+
+    text-align: center;
+   /* background: linear-gradient(45deg, green, yellow,red);*/
+    background-image: conic-gradient(red 180deg, yellow 60deg, green 40deg);
+}

@@ -1,0 +1,1 @@
+course(2000, () => console.log(`${modules.frontend[0]} was selected`))

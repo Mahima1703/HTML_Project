@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/qrcodejs/qrcode.min.js"></script>
+
+</head>
+<body>
+    <h1>Generate QR Code in JavaScript</h1>
+    <label for="url">Enter URL:</label>
+    <input type="text" id="url" placeholder="https://example.com" required><br><br>
+    
+    <label for="width">Enter Width:</label>
+    <input type="number" id="width" placeholder="128" required><br><br>
+    
+    <label for="height">Enter Height:</label>
+    <input type="number" id="height" placeholder="128" required><br><br>
+    
+    <button onclick="generateQRCode()">Generate QR Code</button>
+
+    <button id="downloadBtn" style="display:none;" onclick="downloadQRCode()">Download QR Code</button>
+
+    <div id="qrcode" style="margin-top: 20px;"></div>
+
+    <script>
+        function generateQRCode() {
+            // Get user input
+            var url = document.getElementById("url").value;
+            var width = parseInt(document.getElementById("width").value);
+            var height = parseInt(document.getElementById("height").value);
+
+            // Clear any existing QR code before generating a new one
+            document.getElementById("qrcode").innerHTML = "";
+
+            // Generate the QR code with user input
+            var qrcode = new QRCode(document.getElementById("qrcode"), {
+                text: url,   // User input for URL
+                width: width,  // User input for width
+                height: height  // User input for height
+            });
+
+            document.getElementById("downloadBtn").style.display = "inline-block";
+        }
+
+        function downloadQRCode() {
+            // Get the QR code canvas
+            var canvas = document.querySelector("#qrcode canvas");
+
+            // Convert the canvas to a data URL
+            var link = document.createElement('a');
+            link.href = canvas.toDataURL("image/png"); // Format can be changed to "image/jpeg" if needed
+            link.download = 'qrcode.png'; // Set the default file name
+
+            // Trigger the download
+            link.click();
+        }
+    </script>
+    <!--<div id="qrcode"></div>
+
+    <script>
+        // Create a new QR code and pass the target element and data
+        var qrcode = new QRCode(document.getElementById("qrcode"), {
+            text: "https://example.com",  // Replace this with the data you want in the QR code
+            width: 128,                   // Width of the QR code
+            height: 128, // Height of the QR code
+            colorDark: "#000000",         // QR code dark color
+    colorLight: "#ffffff",        // QR code light color (background)
+    correctLevel: QRCode.CorrectLevel.H                
+        });
+    </script> -->
+</body>
+</html>

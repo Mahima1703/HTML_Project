@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       /* let laptop={
+            name:'Hp',
+            Model:'XYZ',
+            price: 230000,
+
+
+            // ES 6
+            getDetails(){
+
+                return `${this.Model} ${this.name}`;
+            }
+        }
+        document.write(laptop.name)
+        //document.write(laptop.getDetails())
+        lap = laptop.getDetails()
+        document.write(lap); */
+
+        class laptop{
+            
+            constructor(name,model,price){
+                this.name = name
+                this.name = name;
+                this.model = model;
+                this.price = price;
+
+
+            }
+
+            display(color){
+
+                document.write(this.name);
+                document.write(this.model);
+                document.write(this.price);
+                document.write(color);
+
+            }
+        }
+
+            n = 'acer'
+         lp = new laptop(n,'RTY',3435);
+
+         lp.display("blue");
+         document.write(lp.name);
+        a = 10  // Initialization
+    </script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+.flex-container{
+    width: 500px;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items:flex-start;
+    flex-wrap: wrap;
+    
+   
+}
+.grow{
+    flex-grow: 3;
+}
+
+.grow1{
+
+    flex-shrink: 4;
+}
+
+.flex-container div{
+    background-color: hsl(173, 59%, 51%);
+    margin: 10px;
+    border: 2px solid red;
+    
+    
+}

@@ -1,0 +1,56 @@
+.flex-container{
+       display: flex;
+    background-color: blanchedalmond;
+    flex-direction:row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: stretch;
+}
+.flex-container div{
+    margin: 1opx;
+    border: 2px solid red;
+    padding: 10px;
+}
+.grow{
+    flex-shrink: 2;
+}
+a{
+    display: inline-block;
+    background-color: rgb(190, 210, 76);
+}
+
+div:hover p{
+    background-color: cadetblue;
+    display: block;
+
+}
+
+p:hover{
+
+    background-color: brown;
+
+}
+
+p{
+    display: inline;
+
+}
+
+p:first-child {
+    color: blue;
+  }
+
+  p:last-child{
+    color:red;
+  }
+
+  p::first-letter{
+
+    color:orange;
+  }
+  
+
+  ::selection{
+
+    background-color: chartreuse;
+  }
